@@ -236,4 +236,9 @@ RCT_EXPORT_METHOD(presentLocalNotification:(UILocalNotification *)notification)
     [RCTSharedApplication() presentLocalNotificationNow:notification];
 }
 
+RCT_EXPORT_METHOD(logNative:(NSString *)value)
+{
+    NSLog(@"[RNVoipPushNotificationManager] logNative %@", value);
+}
+
 @end

@@ -133,6 +133,13 @@ export default class RNVoipPushNotification {
     }
 
     /**
+     * Will log string using NSLog ios
+    */
+    static logNative(value) {
+        RNVoipPushNotificationManager.logNative(value);
+    }
+
+    /**
      * You will never need to instantiate `RNVoipPushNotification` yourself.
      * Listening to the `notification` event and invoking
      * `popInitialNotification` is sufficient
