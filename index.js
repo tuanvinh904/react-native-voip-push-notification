@@ -136,7 +136,8 @@ export default class RNVoipPushNotification {
      * Will log string using NSLog ios
     */
     static logNative(value) {
-        RNVoipPushNotificationManager.logNative(value);
+        if (Platform.OS == 'ios') RNVoipPushNotificationManager.logNative(value);
+        else console.log('logNative ' + value)
     }
 
     /**
